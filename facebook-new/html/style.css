@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Facebook Sans', Arial, sans-serif;
+}
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+  background-color: #ffffff;
+}
+.navbar{
+    padding: 0 1%;
+
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left{
+    display: flex;
+    align-items: center;
+}
+#left img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+#left img:hover{
+    cursor: pointer;
+}
+#input{
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    border-radius: 20px;
+    padding: 8px 8px;
+}
+#input input{
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 5px;
+    width: 100%; /* Use 100% width to make it responsive */
+    max-width: 200px; /* Optionally, set a max-width */
+}
+
+#middle ul, #right ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#middle ul li{
+    margin: 0 10px;
+}
+#middle ul li a i{
+    padding: 10px 40px;
+}
+#middle ul li a i:hover{
+    background-color: #eff2f5;
+    border-radius: 10px;
+}
+/* #middle ul li.active::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 3px;
+    background-color: #1877f2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}*/
+
+/* Update the middle icon's color when it is active */
+#middle ul li.active a {
+    color: #1877f2;
+}
+
+.active{
+    border-bottom:  3px solid #1877f2;
+}
+
+#right ul li{
+    margin: 0 12px;
+}
+
+#middle ul li a, #right ul li a{
+    color: rgb(67, 64, 64);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#right ul li a i{
+    background-color: #eff2f5;
+    padding: 12px;
+    border-radius: 100%;
+}
+
+.user-avtar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px 0 0 0;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* ============= navbar End =============== */
+
